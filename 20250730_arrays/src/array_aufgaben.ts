@@ -107,7 +107,8 @@ oldHollywoodActors.push("Marilyn Monroe")
 console.log("Old Actors: ", oldHollywoodActors)
 console.log("Reference: ", actorsReference)
 
-// const concatCopy: string[] = [].concat(oldHollywoodActors)
+// const emptyStringArray:string[] = [].
+// const concatCopy: string[] = emptyStringArray.concat(oldHollywoodActors)
 const concatCopy = oldHollywoodActors.concat()
 console.log("Concat Kopie: ", concatCopy)
 concatCopy.push("Test1")
