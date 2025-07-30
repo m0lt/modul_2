@@ -36,7 +36,7 @@ bucketList.pop()
 console.log(bucketList)
 console.log(bucketList.length)
 console.log("// ![=================== Arrays 1_6 shift()===================]")
-let firstBucketList = bucketList.shift()
+const firstBucketList = bucketList.shift()
 bucketList.shift()
 console.log(firstBucketList)
 console.log(bucketList)
@@ -44,7 +44,13 @@ console.log(bucketList.length)
 
 console.log("// ![=================== Arrays 1_7 unshift()===================]")
 
-bucketList.unshift(firstBucketList, "Dortmund")
+if (firstBucketList) {
+  firstBucketList
+  bucketList.unshift(firstBucketList, "Dortmund")
+}
+
+// bucketList.unshift(firstBucketList!, "Dortmund")
+
 console.log(bucketList)
 console.log(bucketList.length)
 
@@ -101,7 +107,8 @@ oldHollywoodActors.push("Marilyn Monroe")
 console.log("Old Actors: ", oldHollywoodActors)
 console.log("Reference: ", actorsReference)
 
-const concatCopy: string[] = [].concat(oldHollywoodActors)
+// const concatCopy: string[] = [].concat(oldHollywoodActors)
+const concatCopy = oldHollywoodActors.concat()
 console.log("Concat Kopie: ", concatCopy)
 concatCopy.push("Test1")
 console.log("Concat Kopie Test1: ", concatCopy)
