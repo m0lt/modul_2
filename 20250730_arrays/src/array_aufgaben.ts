@@ -79,3 +79,37 @@ const futuramaQuote =
 console.log(futuramaQuote)
 const futuramaQuoteWords: string = futuramaQuote.split(" ")
 const futuramaQuoteChars: string = futuramaQuote.split("")
+
+console.log("// ![=================== Arrays 1_14 concat slice spread ===================]")
+
+const oldHollywoodActors: string[] = [
+  "Marlon Brando",
+  "Audrey Hepburn",
+  "Elizabeth Taylor",
+  "Cary Grant",
+  "Paul Newman",
+  "Doris Day",
+]
+console.log(oldHollywoodActors)
+
+const actorsReference = oldHollywoodActors
+
+console.log(actorsReference)
+
+oldHollywoodActors.push("Marilyn Monroe")
+
+console.log("Old Actors: ", oldHollywoodActors)
+console.log("Reference: ", actorsReference)
+
+const concatCopy: string[] = [].concat(oldHollywoodActors)
+console.log("Concat Kopie: ", concatCopy)
+concatCopy.push("Test1")
+console.log("Concat Kopie Test1: ", concatCopy)
+const sliceCopy: string[] = oldHollywoodActors.slice()
+console.log("Slice Kopie: ", sliceCopy)
+sliceCopy.push("Test2")
+console.log("Slice Kopie Test 2: ", sliceCopy)
+const spreadCopy: string[] = [...oldHollywoodActors]
+console.log("Spread Kopie: ", spreadCopy)
+spreadCopy.push("Test3")
+console.log("Spread Kopie Test 3: ", spreadCopy)
