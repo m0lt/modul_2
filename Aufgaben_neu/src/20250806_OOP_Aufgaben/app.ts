@@ -1,4 +1,6 @@
 import IceCreamFlavor from "./classes/IceCreamFlavor" //sollte automatisch erstellt werden?
+import SchoolClass from "./classes/SchoolClass"
+import Schueler from "./classes/Schueler"
 
 const schokolade = new IceCreamFlavor("Schokolade", 1.5, true, "schoki")
 const vanille = new IceCreamFlavor("Vanille", 1.2, true, "Langweilig")
@@ -13,18 +15,20 @@ eissorten.forEach((e) => {
   )
 })
 
-import SchoolClass from "./classes/SchoolClass"
+const 
 
-const deutsch = new SchoolClass(1, "Deutsch", new Date(2026, 0, 1))
-const englisch = new SchoolClass(2, "Englisch")
-const mathe = new SchoolClass(3, "Mathe", new Date(2027, 0, 1))
+const fuenfA = new SchoolClass(1, "5a", new Date(2026, 0, 1))
+const fuenfB = new SchoolClass(2, "5bb")
+const fuenfC = new SchoolClass(3, "5C", new Date(2027, 0, 1))
 
-console.log(deutsch)
-console.log(englisch)
-console.log(mathe)
+console.log(fuenfA)
+console.log(fuenfB)
+console.log(fuenfC)
 
-deutsch.name = "German"
-englisch.name = "English"
+fuenfA.name = "5A"
+fuenfB.name = "5B"
 
-console.log(deutsch)
-console.log(englisch)
+console.log(fuenfA)
+console.log(fuenfB)
+
+

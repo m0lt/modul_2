@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1>Movies for You</h1>
+    <h2>The best MovieDB</h2>
+
+    <section id="Main">
+      <div id="searchWrapper">
+        <div id="inputWrapper">
+          <input type="text" value="" id="movieSearchInput" />
+          <button type="button" id="movieSearchButton" class="primaryBtn">Search</button>
+        </div>
+        <div id="filterWrapper">
+          <button type="button" id="yearUpButton" class="secondaryBtn">Year up</button>
+          <button type="button" id="yearDownButton" class="secondaryBtn">Year down</button>
+          <button type="button" id="yearBestRateButton" class="secondaryBtn">Best Rating</button>
+        </div>
+      </div>
+      <div id="movieResults"></div>
+    </section>
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>
